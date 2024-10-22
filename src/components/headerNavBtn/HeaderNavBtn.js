@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const HederNavBtn = () => {
-  const [navIconMenu, setNavIcon] = useState("show");
+  const [navIconMenu, setNavIcon] = useState("hide");
 
   useEffect(() => {
     document.querySelector(".nav-icon").classList.toggle("nav-icon--active");
