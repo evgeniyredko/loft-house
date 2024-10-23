@@ -1,20 +1,28 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 const HederNavBtn = () => {
-  const [navIconMenu, setNavIcon] = useState("hide");
+  // const [navIconMenu, setNavIcon] = useState("hide");
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   document.querySelector(".nav-icon").classList.toggle("nav-icon--active");
+  //   document
+  //     .querySelector(".header__top-row")
+  //     .classList.toggle("header__top-row--mobile");
+  //   document.body.classList.toggle("no-scroll");
+  // }, [navIconMenu]);
+
+  // const toggleNav = () => {
+  //   setNavIcon((currentValue) => {
+  //     return currentValue === "hide" ? "show" : "hide";
+  //   });
+  // };
+
+  const toggleNav = () => {
     document.querySelector(".nav-icon").classList.toggle("nav-icon--active");
     document
       .querySelector(".header__top-row")
       .classList.toggle("header__top-row--mobile");
     document.body.classList.toggle("no-scroll");
-  }, [navIconMenu]);
-
-  const toggleNav = () => {
-    setNavIcon((currentValue) => {
-      return currentValue === "hide" ? "show" : "hide";
-    });
   };
 
   return (
